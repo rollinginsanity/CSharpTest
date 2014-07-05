@@ -1,0 +1,18 @@
+﻿<Window x:Class="CSharpTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simple Calculator!" Height="350" Width="525">
+    <Grid>
+        <Label Content="This is just a simple test application, it will add the numbers in the two text boxes." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="441"/>
+        <TextBox x:Name="txtNumberOne" HorizontalAlignment="Left" Height="23" Margin="10,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNumberTwo" HorizontalAlignment="Left" Height="23" Margin="10,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" Width="75" Click="btnAdd_Click"/>
+        <Label x:Name="lblAnswer" Content="" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top"/>
+        <Label Content="Number 1" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top"/>
+        <Label Content="Number 2" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdAdd" Content="Addition" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" GroupName="funcs" IsChecked="True"/>
+        <RadioButton x:Name="rdMult" Content="Multiply" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top" GroupName="funcs"/>
+        <RadioButton x:Name="rdSub" Content="Subtraction" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" GroupName="funcs"/>
+
+    </Grid>
+</Window>
